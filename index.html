@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Age Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Smart Age Calculator</h2>
+        <div class="input-container">
+            <label for="date-input">Enter your date of birth:</label>
+            <input type="date" id="date-input">
+        </div>
+
+        <div id="results-container">
+            <div class="primary-result">
+                <h3>Your Age</h3>
+                <div class="age-display">
+                    <div><span id="years">0</span>Years</div>
+                    <div><span id="months">0</span>Months</div>
+                    <div><span id="days">0</span>Days</div>
+                </div>
+            </div>
+
+            <div class="extra-features">
+                <div class="feature-box">
+                    <h4>Next Birthday</h4>
+                    <p id="next-birthday">--</p>
+                </div>
+                <div class="feature-box">
+                    <h4>Zodiac Sign</h4>
+                    <p id="zodiac-sign">--</p>
+                </div>
+                <div class="feature-box">
+                    <h4>Day You Were Born</h4>
+                    <p id="day-of-week">--</p>
+                </div>
+            </div>
+            
+            <div class="summary">
+                <h4>Summary</h4>
+                <p><strong>Total Months:</strong> <span id="total-months">0</span></p>
+                <p><strong>Total Weeks:</strong> <span id="total-weeks">0</span></p>
+                <p><strong>Total Days:</strong> <span id="total-days">0</span></p>
+                <p><strong>Total Hours:</strong> <span id="total-hours">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

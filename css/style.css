@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-image: url('../images/time.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.input-container {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+input[type="date"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+#results-container {
+    margin-top: 20px;
+}
+
+.age-display {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.age-display div {
+    font-size: 1.2rem;
+}
+
+.age-display span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.extra-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.feature-box {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.feature-box h4, .summary h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+}
+
+.feature-box p, .summary p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.summary {
+    margin-top: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+.summary p {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+}
+.summary span {
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .age-display {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .age-display span {
+        font-size: 2rem;
+    }
+}
